@@ -1,0 +1,95 @@
+.about {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 12px var(--page-gutter) 96px;
+}
+
+.about-name {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+
+.about-role {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.about-body {
+  display: grid;
+  gap: 0.35em;
+  margin-top: 28px;
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.about-body p {
+  margin: 0;
+}
+
+.about-block {
+  margin-top: 48px;
+  padding-top: 28px;
+  max-width: 40rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.about-heading {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+
+.about-list {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-list li {
+  display: grid;
+  gap: 4px;
+}
+
+.about-list-label {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.about-list-text {
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.about-link-row {
+  margin: 0;
+}
+
+.about-link {
+  font-size: 0.95rem;
+  color: var(--color-heading);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-heading) 25%, transparent);
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.about-link:hover {
+  color: var(--color-brand-dark);
+  border-bottom-color: var(--color-brand-dark);
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 8px var(--page-gutter) 120px;
+  }
+
+  .about-body p {
+    white-space: nowrap;
+  }
+}

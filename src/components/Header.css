@@ -1,0 +1,158 @@
+.header {
+  position: relative;
+  z-index: 100;
+  padding: 36px var(--page-gutter) 28px;
+  background: transparent;
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  font: inherit;
+  color: var(--color-heading);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-logo-main {
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  line-height: 1.2;
+}
+
+.header-logo-sub {
+  font-size: 0.82rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--color-heading);
+  opacity: 0.85;
+}
+
+.header-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.header-social {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  color: var(--color-heading);
+  opacity: 0.85;
+  transition: opacity 0.2s var(--ease), color 0.2s var(--ease);
+}
+
+.header-social:hover {
+  opacity: 1;
+  color: var(--color-brand-dark);
+}
+
+.header-social svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-link {
+  padding: 4px 2px;
+  font: inherit;
+  font-size: 0.95rem;
+  color: #9a96a8;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s var(--ease);
+}
+
+.header-link:hover {
+  color: #6f6a80;
+}
+
+.header-link.is-active {
+  color: #8b84a0;
+}
+
+.header-menu-button {
+  padding: 0;
+  font: inherit;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: #9a96a8;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-nav-mobile {
+  display: none;
+  padding-top: 18px;
+  text-align: center;
+}
+
+.header-nav-mobile.is-open {
+  display: block;
+}
+
+.header-nav-mobile ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-nav-mobile .header-link {
+  font-size: 1rem;
+}
+
+@media (min-width: 720px) {
+  .header {
+    padding: 48px var(--page-gutter) 36px;
+  }
+
+  .header-inner {
+    gap: 20px;
+  }
+
+  .header-nav {
+    display: block;
+  }
+
+  .header-menu-button,
+  .header-nav-mobile {
+    display: none;
+  }
+}

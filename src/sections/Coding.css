@@ -1,0 +1,146 @@
+.coding {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 12px var(--page-gutter) 96px;
+}
+
+.coding-intro {
+  margin-bottom: 40px;
+}
+
+.coding-title {
+  font-size: clamp(1.7rem, 4vw, 2.35rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.coding-period {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.coding-lead {
+  display: grid;
+  gap: 0.35em;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.coding-lead p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .coding-lead p {
+    white-space: nowrap;
+  }
+}
+
+.coding-note {
+  margin-top: 16px;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+.coding-list {
+  display: grid;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.coding-card {
+  position: relative;
+}
+
+.coding-card-link {
+  display: grid;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.coding-card-media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: var(--color-chip);
+  border: 1px solid var(--color-line);
+}
+
+.coding-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.45s var(--ease);
+}
+
+.coding-card-fallback {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.coding-card-link:hover .coding-card-image {
+  transform: scale(1.03);
+}
+
+.coding-card-meta {
+  display: grid;
+  gap: 4px;
+  padding-inline: 2px;
+}
+
+.coding-card-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.coding-card-github {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+}
+
+.coding-card-github:hover {
+  color: var(--color-brand-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coding-card-image {
+    transition: none;
+  }
+
+  .coding-card-link:hover .coding-card-image {
+    transform: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .coding {
+    padding: 8px var(--page-gutter) 120px;
+  }
+
+  .coding-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+  }
+}

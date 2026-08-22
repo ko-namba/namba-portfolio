@@ -1,0 +1,85 @@
+/*
+  Saito design 寄り：ページ切替型・余白多めのミニマル構成
+*/
+:root {
+  --color-bg: #faf9f7;
+  --color-text: #2a2a2a;
+  --color-heading: #111111;
+  --color-muted: #6f6f6f;
+  --color-brand: #f1a247;
+  --color-brand-dark: #d98a2e;
+  --color-brand-light: #f5bc70;
+  --gradient-brand-text: linear-gradient(
+    118deg,
+    var(--color-brand-dark) 0%,
+    var(--color-brand) 48%,
+    var(--color-brand-light) 100%
+  );
+  --color-accent: var(--color-brand-dark);
+  --color-line: #e8e4dc;
+  --color-chip: #efebe4;
+  --font-sans: 'Inter Tight', 'Noto Sans JP', sans-serif;
+  --space-xl: 88px;
+  --content-width: 1080px;
+  --page-gutter: 28px;
+  --header-height: auto;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--color-text);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, #fff6ea 0%, transparent 55%),
+    radial-gradient(ellipse 70% 40% at 100% 0%, #f3f1ec 0%, transparent 50%),
+    var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--color-heading);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
