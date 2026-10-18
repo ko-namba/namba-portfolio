@@ -44,12 +44,7 @@ function About() {
           </li>
           <li>
             <span className="about-list-label">UXケーススタディ</span>
-            <span className="about-list-text about-list-text--wrap">
-              ゴミ出し忘れ防止アプリ「ごみ日和」
-              <a className="about-inline-link" href="#works/gomi-biyori">
-                ケーススタディを見る
-              </a>
-            </span>
+            <span className="about-list-text">ゴミ出し忘れ防止アプリ「ごみ日和」</span>
           </li>
         </ul>
       </div>
