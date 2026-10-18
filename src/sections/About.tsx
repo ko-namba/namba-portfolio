@@ -63,6 +63,14 @@ function About() {
           >
             GitHub
           </a>
+          <a
+            className="about-link"
+            href="https://moneymind-ai-zeta.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            AI家計簿アプリ「MoneyMind」
+          </a>
           <a className="about-link" href="#works/gomi-biyori">
             ごみ日和 ケーススタディ
           </a>
