@@ -22,7 +22,6 @@ function Header({ currentPage, onNavigate }: HeaderProps) {
   const go = (page: PageId) => {
     onNavigate(page)
     closeMenu()
-    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   useEffect(() => {

@@ -3,7 +3,10 @@ export interface Project {
   id: number
   title: string
   label: string
-  url: string
+  /** 外部サイトのURL（ケーススタディのときは省略可） */
+  url?: string
+  /** 内部ケーススタディのID（あるとカードからページへ移動） */
+  caseStudyId?: 'gomi-biyori'
   /** サムネイル画像（public 配下） */
   image?: string
   /** リポジトリURL（任意） */
@@ -15,6 +18,16 @@ export interface Project {
 
 /** 作品一覧 */
 export const projects: Project[] = [
+  {
+    id: 7,
+    title: 'ごみ日和',
+    label: 'UX Case Study',
+    caseStudyId: 'gomi-biyori',
+    image: '/works/gomi-biyori/home-morning.png',
+    category: 'other',
+    color: '#3d5a47',
+    textColor: '#f5f2eb',
+  },
   {
     id: 1,
     title: 'MoneyMind',
