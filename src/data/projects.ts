@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: 'ごみ日和',
     label: 'UX Case Study',
     caseStudyId: 'gomi-biyori',
-    image: '/works/gomi-biyori/home-morning.png',
+    image: '/works/gomi-biyori/thumb.jpg',
     category: 'other',
     color: '#3d5a47',
     textColor: '#f5f2eb',

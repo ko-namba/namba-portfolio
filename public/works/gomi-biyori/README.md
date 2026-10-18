@@ -7,6 +7,7 @@
 
 | ファイル名 | 中身 |
 |---|---|
+| `thumb.jpg` | Other一覧カード用の横長サムネ（ホーム上部を拡大） |
 | `hero-home.png` | ホーム（当日朝）をiPhone枠に入れたもの。概要の一番上 |
 | `home-morning.png` | ホーム（当日朝） |
 | `home-after.png` | ホーム（収集後） |
