@@ -4,12 +4,15 @@ function About() {
   return (
     <section className="about" id="about">
       <h1 className="about-name">難波 昂輝</h1>
-      <p className="about-role">Webプログラマー / UX・UIデザイン学習中</p>
+      <p className="about-role">Webプログラマー / React・TypeScript・UX・UIデザイン学習中</p>
 
       <div className="about-body">
         <p>Webプログラマーとして、Webサイトの制作や既存Webサイトの運用・改修に取り組んでいます。</p>
         <p>WordPress・MTサイトの改修や、PHPを使った実装も行っています。</p>
         <p>デザインの意図をくみ取りつつ、更新しやすく安心して運用できる実装を心がけています。</p>
+        <p>
+          React と TypeScript も独学で学習しており、AI家計簿アプリ「MoneyMind」の制作に取り組んでいます。
+        </p>
         <p>
           あわせてUX・UIデザインの学習として、ゴミ出し忘れ防止アプリ「ごみ日和」のケーススタディを制作しています。
         </p>
