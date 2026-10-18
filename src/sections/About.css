@@ -67,7 +67,29 @@
   white-space: nowrap;
 }
 
+.about-list-text--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em 0.75em;
+  align-items: baseline;
+  white-space: normal;
+}
+
+.about-inline-link {
+  font-size: 0.85rem;
+  color: var(--color-brand-dark);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-brand-dark) 35%, transparent);
+}
+
+.about-inline-link:hover {
+  border-bottom-color: var(--color-brand-dark);
+}
+
 .about-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
   margin: 0;
 }
 
@@ -90,6 +112,6 @@
   }
 
   .about-body p {
-    white-space: nowrap;
+    white-space: normal;
   }
 }

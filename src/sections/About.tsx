@@ -4,12 +4,15 @@ function About() {
   return (
     <section className="about" id="about">
       <h1 className="about-name">難波 昂輝</h1>
-      <p className="about-role">Webプログラマー</p>
+      <p className="about-role">Webプログラマー / UX・UIデザイン学習中</p>
 
       <div className="about-body">
         <p>Webプログラマーとして、Webサイトの制作や既存Webサイトの運用・改修に取り組んでいます。</p>
         <p>WordPress・MTサイトの改修や、PHPを使った実装も行っています。</p>
         <p>デザインの意図をくみ取りつつ、更新しやすく安心して運用できる実装を心がけています。</p>
+        <p>
+          あわせてUX・UIデザインの学習として、ゴミ出し忘れ防止アプリ「ごみ日和」のケーススタディを制作しています。
+        </p>
       </div>
 
       <div className="about-block">
@@ -29,15 +32,24 @@ function About() {
           </li>
           <li>
             <span className="about-list-label">デザインツール</span>
-            <span className="about-list-text">Illustrator / Photoshop</span>
+            <span className="about-list-text">Figma / Illustrator / Photoshop</span>
           </li>
           <li>
             <span className="about-list-label">学習中</span>
-            <span className="about-list-text">React / TypeScript（独学）</span>
+            <span className="about-list-text">React / TypeScript / UX・UIデザイン（独学）</span>
           </li>
           <li>
             <span className="about-list-label">アプリ制作</span>
             <span className="about-list-text">AI家計簿アプリ「MoneyMind」</span>
+          </li>
+          <li>
+            <span className="about-list-label">UXケーススタディ</span>
+            <span className="about-list-text about-list-text--wrap">
+              ゴミ出し忘れ防止アプリ「ごみ日和」
+              <a className="about-inline-link" href="#works/gomi-biyori">
+                ケーススタディを見る
+              </a>
+            </span>
           </li>
         </ul>
       </div>
@@ -52,6 +64,9 @@ function About() {
             rel="noopener noreferrer"
           >
             GitHub
+          </a>
+          <a className="about-link" href="#works/gomi-biyori">
+            ごみ日和 ケーススタディ
           </a>
         </p>
       </div>
